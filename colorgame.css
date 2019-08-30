@@ -2,12 +2,7 @@ body {
 	background-color: #232323;
 	margin: 0;
 	font-family: "Montserrat", "Avenir";
-	font-weight: normal;
 	text-transform: uppercase;
-}
-
-#colorDisplay {
-	font-size: 200%;
 }
 
 .square {
@@ -17,8 +12,8 @@ body {
 	margin: 1.66%;
 	border-radius: 15%;
 	transition: background .5s;
-	-webkit-transition:background .5s;
-	-moz-transition:background .5s;
+	-webkit-transition: background .5s;
+	-moz-transition: background .5s;
 }
 
 #container {
@@ -27,19 +22,35 @@ body {
 }
 
 h1 {
-	color: white;
 	text-align: center;
+	line-height: 1.1;
+	font-weight: normal;
+	color: white;
 	background: steelblue;
 	margin: 0;
-	line-height: 1.1;
+	text-transform: uppercase;
 	padding: 20px 0;
+}
+
+#colorDisplay {
+	font-size: 200%;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+	font-weight: 800;
+}
+
+#streak {
+	color: white;
+	text-align: center;
 }
 
 #stripe {
 	background-color: white;
 	height: 30px;
 	text-align: center;
-	color: black;
 }
 
 .selected {
@@ -60,15 +71,10 @@ button {
 	-moz-transition:all .3s;
 	transition: all 0.3s;
 	outline: none;
+	border-spacing: none;
 }
 
 button:hover {
 	color: white;
 	background: steelblue;
-}
-
-#message {
-	display: inline-block;
-	width: 20%;
-	font-weight: 700;
 }
